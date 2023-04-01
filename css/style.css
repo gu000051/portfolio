@@ -1,0 +1,423 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+/* Generic Styles */
+main{
+    min-height: 100vh;
+    background-color: #white; 
+}
+
+body {
+    background: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px; /* this is 1em */
+    line-height: 1.5;
+    color: black;
+}
+
+h1 {
+    font-size: 71px;
+    line-height: 106px;
+    font-weight: bold;
+    margin-bottom: 18px;   
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-align: center;  
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 12px;
+    padding-left: 14px;
+}
+
+P {
+    margin-bottom: 1em; /* font-size is 14, so 1em= 14px */   
+}
+
+img {
+    max-width: 100%;   
+}
+
+
+/* HOME PAGE STYLING */
+
+.banner {
+    background-image: url("/Users/summer/Desktop/WEEKONE/portfolio/images/banner.jpeg");
+    background-size: cover;
+    height: 450px;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("https://i.imgur.com/NzCJFXb.png");
+    filter: invert(1);
+  }
+
+  @font-face{
+    font-family: "Nanum_Brush_Script";
+    src:url(/Users/summer/Downloads/Nanum_Brush_Script,Satisfy)
+  }
+
+.navbar-brand {
+    font-family:"Nanum Brush Script", sans-serif;
+    font-size: 40px;
+}
+
+  /*banner text*/
+.banner-text {
+    position: absolute;
+    top: 30%;
+    right: -10%;
+    transform: translateY(-50%);
+    width: 50%;
+    padding: 20px;
+}
+  
+.banner-text h1 {
+    font-size: 55px;
+    font-family:"Nanum Brush Script", sans-serif;
+}
+  
+.banner-text p {
+    font-size: 20px; 
+    padding-top: -15px;
+}
+
+ /*main content style*/
+
+.section {
+    border: 2px solid #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px 10px #f2f2f2;
+    background-color: #f2f2f2;
+    padding:35px;
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 55px;
+}
+  
+.section img {
+    position: absolute;
+    top: -20px;
+    left: 45%; 
+}
+  
+.section h2 {
+    margin-top: 20px;
+    margin-bottom: 28px;
+    font-size: 35px;
+}
+  
+.section p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 28px;
+}
+
+.section a{
+    color: #412C27;
+    text-decoration: underline;
+    text-decoration-color:#412C27;
+}
+
+.footer{
+    padding: 25px;
+    background-color: #412C27;
+}
+
+  /* ABOUT PAGE */
+
+.about-page .navbar{
+    background-color:#412C27 ;
+}
+
+h1.about-page{
+    margin-top: 80px;
+    font-size: 40px;
+}
+
+.about p{
+   margin-left:60px;
+   margin-right:60px;
+   margin-top: 28px;
+}
+
+.about-me img{
+   padding-left: 40px;
+   padding-right: 40px;
+}
+
+.about-me p{
+   margin-left:60px;
+   margin-right:60px;
+   margin-top: 28px;
+   margin-bottom: 40px ;
+}
+
+  /* CONTACT PAGE */
+
+.contact-page .navbar{
+   background-color:#412C27 ;
+}
+
+h1.contact-page {
+   margin-top: 80px;
+   font-size: 40px;
+}
+
+.contact-info p{
+    margin-left: 28px;
+    margin-bottom: 28px;
+}
+
+.form label{ 
+   padding-left: 28px;
+}
+
+.form input { 
+    width: 50%;
+    height: 40px;
+    margin-left: 28px;
+    border: solid 1px #f5f8fc;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+#message{
+    height: 200px;
+    width: 90%;
+}
+    
+.form button{
+    font-size: 15px;
+    margin-left: 28px;
+    width: 80px;
+    height: 40px;
+    background-color:#f2f2f2;
+    color: #412C27;
+    border: solid 2px #412C27;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.form button:hover{
+    background-color:#412C27;
+    color:#f2f2f2
+}
+
+/* PHOTOGRAPHY PAGE */
+
+.photography-page .navbar{
+    background-color:#412C27 ;
+ }
+
+.portfolio-title{
+    margin-top: 85px;
+    font-size: 40px;
+}
+
+.portfolio1 {
+    padding-left: 50px;
+    padding-right:50px;
+    padding-top: 28px;
+}
+
+.portfolio2 {
+    padding-left: 50px;
+    padding-right:50px;
+    padding-top: 28px;
+}
+
+.portfolio3 {
+    padding-left:50px;
+    padding-right:50px;
+    padding-top: 28px;
+}
+
+.portfolio4 {
+    padding-left:25px;
+    padding-right:25px;
+    padding-top: 28px;
+}
+
+.portfolio5 {
+    padding-left:25px;
+    padding-right:25px;
+    padding-top: 28px;
+}
+
+.portfolio6 {
+    padding-left:25px;
+    padding-right:25px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+}
+
+/* WEB DESIGN PAGE */
+
+.web-page .navbar{
+    background-color:#412C27 ;
+ }
+
+h1.web-page{
+  margin-top: 80px;
+  font-size: 40px;
+}
+
+h2{
+  font-size: 30px;
+}
+
+.web1 {
+  padding-left: 40px;
+  padding-right:40px;
+  padding-top: 28px;
+}
+
+.web2 {
+  padding-left: 40px;
+  padding-right:40px;
+  padding-top: 28px;
+}
+
+.web3 {
+  padding-left: 40px;
+  padding-right:40px;
+  padding-top: 28px;
+}
+
+.web4 {
+  padding-left: 50px;
+  padding-right:50px;
+  padding-top: 28px;
+}
+
+.web5 {
+  padding-left: 40px;
+  padding-right:40px;
+  padding-top: 28px;
+}
+
+.web6 {
+  padding-left: 40px;
+  padding-right:40px;
+  padding-top: 28px;
+}
+
+.web7 {
+  padding-left: 40px;
+  padding-right:40px;
+  padding-top: 28px;
+}
+
+.example1{
+  background-color: #f2f2f2;
+  border: #f2f2f2;
+  border-radius: 20px;
+}
+
+.example2{
+  background-color: #f2f2f2;
+  border: #f2f2f2;
+  border-radius: 20px;
+}
+
+.example3{
+  background-color: #f2f2f2;
+  border: #f2f2f2;
+  border-radius: 20px;
+}
+
+.example4{
+  background-color: #f2f2f2;
+  border: #f2f2f2;
+  border-radius: 20px;
+}
+
+.example5{
+  background-color: #f2f2f2;
+  border: #f2f2f2;
+  border-radius: 20px;
+}
+
+.example6{
+  background-color: #f2f2f2;
+  border: #f2f2f2;
+  border-radius: 20px;
+}
+
+.example7{
+  background-color: #f2f2f2;
+  border: #f2f2f2;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
