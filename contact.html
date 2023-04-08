@@ -45,23 +45,27 @@
         </nav>
     </header>
 <main>
-    <section class="contact-info">
-     <h1 class="contact-page text-center">Let's create something great together!</h1>
-     <p>Ready to chat about your design needs or just want to say hello?</p>
-     <p>Use the form to send me a message and I’ll get back to you soon. </p>
-     <p>Hey Summer</p>
-      <div class="form">
+    <div class="contact-info row">
+     
+       <h1 class="contact-page text-center">Let's create something great together!</h1>
+
+       <div class="col-md my-3 mt-md-4 mx-md-3">
+       <p>Ready to chat about your design needs or just want to say "Hello"?</p>
+       <p>Use the form to send me a message and I’ll get back to you soon. </p>
+      </div>
+     
+      <div class="form col-md-7 my-3 mt-md-4 mx-md-3">
         <form action="/action_page.php" role="form">
-            <label for="fname">Full Name*:</label><br>
-            <input type="text" id="fname" name="fname"placeholder="Your Name:"><br><br>
-            <label for="email">Email*:</label><br>
-            <input type="text" id="email" name="email" placeholder="Your Email:"><br><br>
-            <label for="message">Message:</label><br>
-            <input type="text" id="message" name="message" placeholder="Here is a brief description of what is your project"><br><br>
-            <button type="button"> Send </button>
+            <label for="fname">Full Name*:</label><br><br>
+            <input class="form-control" type="text" id="fname" name="fname"placeholder="Your Name:"><br>
+            <label for="email">Email*:</label><br><br>
+            <input class="form-control" type="text" id="email" name="email" placeholder="Your Email:"><br>
+            <label for="message">Message:</label><br><br>
+            <input class="form-control" type="text" id="message" name="message" placeholder="Here is a brief description of what is your project"><br><br>
+            <button class="form-control" type="button"> Send </button>
         </form>
       </div>
-    </section>
+    </div>
 </main>
 
 <footer>

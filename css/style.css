@@ -1,3 +1,6 @@
+:root {
+  --bs-secondary-bg-subtle: #f2f2f2;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -77,17 +80,21 @@ P {
     margin-bottom: 1em; /* font-size is 14, so 1em= 14px */   
 }
 
-img {
-    max-width: 100%;   
+img, object {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;   
 }
 
 
 /* HOME PAGE STYLING */
 
 .banner {
-    background-image: url("/Users/summer/Desktop/WEEKONE/portfolio/images/banner.jpeg");
+    background-image: url("../images/banner.jpeg");
     background-size: cover;
-    height: 450px;
+    height: 480px;
+    width: 100%;
+   
 }
 
 .navbar {
@@ -113,6 +120,34 @@ img {
     font-size: 40px;
 }
 
+/* Nav bar animation */
+
+.navbar-nav .nav-link {
+  position: relative;
+}
+
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color:floralwhite;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-nav .nav-link:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/* End nav bar animation */
+
+
+
   /*banner text*/
 .banner-text {
     position: absolute;
@@ -124,35 +159,51 @@ img {
 }
   
 .banner-text h1 {
-    font-size: 55px;
+    
     font-family:"Nanum Brush Script", sans-serif;
 }
-  
+
+/* H1 Animation */
+.banner-text h1 {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+} 
+/* End H1 Animation */ 
+
 .banner-text p {
     font-size: 20px; 
     padding-top: -15px;
 }
+
+.banner-text p {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+} 
 
  /*main content style*/
 
 .section {
     border: 2px solid #f2f2f2;
     border-radius: 10px;
-    box-shadow: 5px 10px 10px 10px #f2f2f2;
-    background-color: #f2f2f2;
+    box-shadow: 5px 5px 5px 5px #f2f2f2;
     padding:35px;
-    text-align: center;
-    position: relative;
-    margin-top: 40px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 55px;
+    text-align: center; 
 }
   
 .section img {
     position: absolute;
     top: -20px;
     left: 45%; 
+    width: 45px;
+    height: 45px;
 }
   
 .section h2 {
@@ -189,22 +240,16 @@ h1.about-page{
     font-size: 40px;
 }
 
-.about p{
-   margin-left:60px;
-   margin-right:60px;
-   margin-top: 28px;
+.about-banner{
+   margin-top: -20px;
 }
 
-.about-me img{
-   padding-left: 40px;
-   padding-right: 40px;
+.about p{
+   line-height: 2;
 }
 
 .about-me p{
-   margin-left:60px;
-   margin-right:60px;
-   margin-top: 28px;
-   margin-bottom: 40px ;
+   line-height: 2;
 }
 
   /* CONTACT PAGE */
@@ -214,8 +259,11 @@ h1.about-page{
 }
 
 h1.contact-page {
-   margin-top: 80px;
+   margin-top: 110px;
    font-size: 40px;
+   padding-left: 24px;
+   padding-right: 24px;
+   line-height: 1.7;
 }
 
 .contact-info p{
@@ -228,10 +276,10 @@ h1.contact-page {
 }
 
 .form input { 
-    width: 50%;
+    width: 90%;
     height: 40px;
     margin-left: 28px;
-    border: solid 1px #f5f8fc;
+    border:   #f5f8fc;
     background-color: #f2f2f2;
     border-radius: 10px;
 }
@@ -269,43 +317,6 @@ h1.contact-page {
     font-size: 40px;
 }
 
-.portfolio1 {
-    padding-left: 50px;
-    padding-right:50px;
-    padding-top: 28px;
-}
-
-.portfolio2 {
-    padding-left: 50px;
-    padding-right:50px;
-    padding-top: 28px;
-}
-
-.portfolio3 {
-    padding-left:50px;
-    padding-right:50px;
-    padding-top: 28px;
-}
-
-.portfolio4 {
-    padding-left:25px;
-    padding-right:25px;
-    padding-top: 28px;
-}
-
-.portfolio5 {
-    padding-left:25px;
-    padding-right:25px;
-    padding-top: 28px;
-}
-
-.portfolio6 {
-    padding-left:25px;
-    padding-right:25px;
-    padding-top: 28px;
-    padding-bottom: 28px;
-}
-
 /* WEB DESIGN PAGE */
 
 .web-page .navbar{
@@ -321,52 +332,11 @@ h2{
   font-size: 30px;
 }
 
-.web1 {
-  padding-left: 40px;
-  padding-right:40px;
-  padding-top: 28px;
-}
-
-.web2 {
-  padding-left: 40px;
-  padding-right:40px;
-  padding-top: 28px;
-}
-
-.web3 {
-  padding-left: 40px;
-  padding-right:40px;
-  padding-top: 28px;
-}
-
-.web4 {
-  padding-left: 50px;
-  padding-right:50px;
-  padding-top: 28px;
-}
-
-.web5 {
-  padding-left: 40px;
-  padding-right:40px;
-  padding-top: 28px;
-}
-
-.web6 {
-  padding-left: 40px;
-  padding-right:40px;
-  padding-top: 28px;
-}
-
-.web7 {
-  padding-left: 40px;
-  padding-right:40px;
-  padding-top: 28px;
-}
-
 .example1{
   background-color: #f2f2f2;
   border: #f2f2f2;
   border-radius: 20px;
+
 }
 
 .example2{
@@ -378,7 +348,7 @@ h2{
 .example3{
   background-color: #f2f2f2;
   border: #f2f2f2;
-  border-radius: 20px;
+  border-radius: 20px; 
 }
 
 .example4{
@@ -406,9 +376,191 @@ h2{
   margin-bottom: 40px;
 }
 
+@media only screen and (min-width: 768px){
+  .banner {
+      background-repeat: no-repeat;
+      background-position: center;
+      height:700px;        
+  }
+  .banner-text h1{
+    font-size: 70px;
+  }
+
+  /* WEB PAGE ANIMATION  */
+
+      /* web page p1 style */
+  .webdesign1{
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .webdesign1 h2{
+    margin-left: -300px;
+  }
+  .webdesign1 p{
+    margin-left: -200px;
+  }/*end web page p1 style */
+
+     /* web page p2 style */
+  .webdesign2{
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .webdesign2 h2{
+    margin-left: -50px;
+  }
+
+  .webdesign2 p{
+    margin-left: 150px;
+  } /* end web page p2 style */
+
+  /*web page p3 style */
+  .webdesign3{
+    animation-duration: 2.5s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  .webdesign3 p{
+    margin-left: 50px;
+  }
 
 
+/* CONTACT PAGE */
+  .form-control {
+  transition: all 0.3s ease-in-out; /* Add transition for all properties */
+  }
 
+  .form-control:hover {
+  transform: scale(1.1); /* Increase size of input by 10% on hover */
+  }
+
+}
+
+  @media only screen and (min-width: 992px){
+ /* HOME PAGE */
+  .banner-text h1{
+      font-size: 90px;
+  }
+  /* WEB PAGE ANIMATION  */
+
+  .webdesign1{
+    animation-duration: 1s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .webdesign1 h2{
+    margin-left: -500px;
+  }
+  .webdesign1 p{
+    margin-left: -350px;
+  }
+
+  .webdesign2{
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  .webdesign2 h2{
+    margin-left: -100px;
+  }
+  .webdesign2 p{
+    margin-left: 150px;
+  }
+
+  .webdesign3{
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  .webdesign3 h2{
+    margin-left: 50px;
+  }
+  .webdesign3 p{
+    margin-left: 150px;
+  }
+
+ /* CONTACT PAGE  */
+  .form-control {
+  transition: all 0.3s ease-in-out; /* Add transition for all properties */
+  }
+
+    .form-control:hover {
+  transform: scale(1.1); /* Increase size of input by 10% on hover */
+  }
+
+  /*  */
+  }
 
 
 

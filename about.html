@@ -49,21 +49,52 @@
     <main>
         <section class="about">
            <h1 class=" about-page text-center" >About US</h1>
-           <img src="images/about-image.jpg" alt="about page image">
-           <p > We are a multimedia design studio.We work with purpose and imagination to engage, inspire, and delight.
+           <picture> 
+             <source srcset="images/about-image-1600_x_850.jpg,
+                             images/about-image-2400_x_1275.jpg 1.5x,
+                             images/about-image-3200_x_1698.jpg 2x"
+                    media="(min-width: 992px)" />
+      
+             <source srcset="images/about-image-1000_x_600.jpg,
+                             images/about-image-1500_x_900.jpg 1.5x,
+                             images/about-image-2000_x_1200.jpg 2x"
+                    media="(max-width: 991px)" />
+             <img class="about-banner px-5 px-md-5 " src="images/about-image.jpg" alt="about page image">
+           </picture>
+
+           <p class="px-5 px-md-5"> We are a multimedia design studio.We work with purpose and imagination to engage, inspire, and delight.
             Services: We offering Web Design for B2B and B2C brands, UI/UX development, Website development.
             Standing out in the competitive digital space is not easy these days for new businesses, 
             but we help such businesses to stand out. It focuses on adding value to the B2B and B2C brands.
-            </p>
+           </p>
         </section>
         <hr>
        <section class="about-me">
          <h2>About Me</h2>
-         <img src="images/my-pic.jpeg" alt="my pic">
-         <p>Hi, my name is Dengyizhou, and I’m an Interactive Media Design student with a Master of Public Administration and a Bachelor’s degree in Mass Media. 
-            With my extensive knowledge in design tools such as Adobe suite, programming languages including HTML, CSS, Python, and Javascript, 
-            and experience in content management systems such as Wordpress and Drupal, I am confident in my ability to create engaging and user-friendly designs.
-         </p>
+         <div class="container">
+           <div class="row ">
+              <div class="col-md">
+                <picture> 
+                  <source srcset="images/my-pic-800_x_1000.jpeg,
+                                  images/my-pic-1200_x_1500.jpeg 1.5x,
+                                  images/my-pic-1600_x_2000.jpeg 2x"
+                         media="(min-width: 992px)" />
+           
+                  <source srcset="images/my-pic-900_x_1100.jpeg,
+                                  images/my-pic-1350_x_1649.jpeg 1.5x,
+                                  images/my-pic-1800_x_2200.jpeg 2x"
+                         media="(max-width: 991px)" />
+                  <img class="px-5 pb-md-5 pt-md-4" src="images/my-pic.jpeg" alt="my pic">
+                </picture> 
+              </div>
+              <div class="mb-5 col-md">
+                 <p class="px-5 pt-4 ">Hi, my name is Dengyizhou, and I’m an Interactive Media Design student with a Master of Public Administration and a Bachelor’s degree in Mass Media. 
+                          With my extensive knowledge in design tools such as Adobe suite, programming languages including HTML, CSS, Python, and Javascript, 
+                          and experience in content management systems such as Wordpress and Drupal, I am confident in my ability to create engaging and user-friendly designs.
+                </p>
+              </div>
+           </div>
+         </div>  
        </section>
     </main>
 

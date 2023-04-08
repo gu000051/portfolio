@@ -46,15 +46,116 @@
     </header>
 <main>
     <h1 class="portfolio-title text-center">Photography</h1>
-    <img class="portfolio" src="images/pic.jpeg" alt="photo banner">
-    
-    <img class="portfolio1" src="images/pic1.jpeg" alt="photo portfolio1">
-    <img class="portfolio2" src="images/pic3.jpeg" alt="photo portfolio2">
-    <img class="portfolio3" src="images/pic4.jpeg" alt="photo portfolio3">
-    <img class="portfolio4" src="images/pic2.jpeg" alt="photo portfolio4">
-    <img class="portfolio5" src="images/pic5.jpeg" alt="photo portfolio5">
-    <img class="portfolio6" src="images/pic7.jpeg" alt="photo portfolio6">
 
+    <picture> 
+      <source srcset="images/pic-1300_x_1000.jpeg,
+                      images/pic-1950_x_1500.jpeg 1.5x,
+                      images/pic-2600_x_2000.jpeg 2x"
+              media="(min-width: 992px)" />
+
+      <source srcset="images/pic-990_x_990.jpeg,
+                      images/pic-1485_x_1485.jpeg 1.5x,
+                      images/pic-1980_x_1980.jpeg 2x"
+              media="(max-width: 991px)" />
+      <img class="portfolio p-3 " src="images/pic.jpeg" alt="photo banner">
+    </picture>
+
+    <div class="container"> 
+      <div class="row px-sm-2">
+        <div class="col-md-4">
+          <picture> 
+            <source srcset="images/pic1-600_x_900.jpeg,
+                            images/pic1-900_x_1350.jpeg 1.5x,
+                            images/pic1-1200_x_1800.jpeg 2x"
+                    media="(min-width: 992px)" />
+      
+            <source srcset="images/pic1-768_x_1000.jpeg,
+                            images/pic1-1152_x_1500.jpeg 1.5x,
+                            images/pic1-1536_x_1998.jpeg 2x"
+                    media="(max-width: 991px)" />
+
+          <img class="pt-4 pt-md-5 " src="images/pic1.jpeg" alt="portfolio1">
+          </picture>
+        </div>
+
+        <div class="col-md-4">
+          <picture> 
+            <source srcset="images/pic3-600_x_900.jpeg,
+                            images/pic3-900_x_1350.jpeg 1.5x,
+                            images/pic3-1200_x_1800.jpeg 2x"
+                    media="(min-width: 992px)" />
+      
+            <source srcset="images/pic3-768_x_1000.jpeg,
+                            images/pic3-1152_x_1500.jpeg 1.5x,
+                            images/pic3-1536_x_2000.jpeg 2x"
+                    media="(max-width: 991px)" />
+
+           <img class="pt-4 pt-md-5" src="images/pic3.jpeg" alt="portfolio2">
+          </picture>
+        </div>
+
+        <div class="col-md-4">
+          <picture> 
+            <source srcset="images/pic4-600_x_900.jpeg,
+                            images/pic4-900_x_1350.jpeg 1.5x,
+                            images/pic4-1200_x_1800.jpeg 2x"
+                    media="(min-width: 992px)" />
+      
+            <source srcset="images/pic4-768_x_1000.jpeg,
+                            images/pic4-1152_x_1500.jpeg 1.5x,
+                            images/pic4-1536_x_2000.jpeg 2x"
+                    media="(max-width: 991px)" />
+           <img class="pt-4 pt-md-5" src="images/pic4.jpeg" alt="portfolio3">
+          </picture>
+        </div>
+        
+        <div class="col-md-4">
+          <picture> 
+            <source srcset="images/pic2-600_x_400.jpeg,
+                            images/pic2-900_x_600.jpeg 1.5x,
+                            images/pic2-1200_x_800.jpeg 2x"
+                    media="(min-width: 992px)" />
+      
+            <source srcset="images/pic2-768_x_500.jpeg,
+                            images/pic2-1152_x_750.jpeg 1.5x,
+                            images/pic2-1536_x_1000.jpeg 2x"
+                    media="(max-width: 991px)" />
+           <img class="pt-4 pt-md-5 mb-md-5" src="images/pic2.jpeg" alt="portfolio4">
+          </picture>
+        </div>
+
+        <div class="col-md-4">
+          <picture> 
+            <source srcset="images/pic5-600_x_400.jpeg,
+                            images/pic5-900_x_600.jpeg1.5x,
+                            images/pic5-1200_x_800.jpeg 2x"
+                    media="(min-width: 992px)" />
+      
+            <source srcset="images/pic5-768_x_500.jpeg,
+                            images/pic5-1152_x_750.jpeg 1.5x,
+                            images/pic5-1536_x_1000.jpeg 2x"
+                    media="(max-width: 991px)" />
+           <img class="pt-4 pt-md-5 mb-md-5" src="images/pic5.jpeg" alt="portfolio5">
+          </picture>
+        </div>
+
+        <div class="col-md-4">
+          <picture> 
+            <source srcset="images/pic7-600_x_400.jpeg,
+                            images/pic7-900_x_600.jpeg 1.5x,
+                            images/pic7-1200_x_800.jpeg 2x"
+                    media="(min-width: 992px)" />
+      
+            <source srcset="images/pic7-768_x_500.jpeg,
+                            images/pic7-1152_x_750.jpeg 1.5x,
+                            images/pic7-1536_x_1000.jpeg 2x"
+                    media="(max-width: 991px)" />
+          <img class="pt-4 mb-5 pt-md-5 mb-md-5" src="images/pic7.jpeg" alt="portfolio6">
+          </picture>
+        </div>
+       
+      </div>
+    </div>
 </main>
 
 <footer>
