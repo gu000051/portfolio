@@ -28,7 +28,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ol, ul {
@@ -42,7 +42,6 @@ blockquote, q {
 /* Generic Styles */
 main{
     min-height: 100vh;
-    background-color: #white; 
 }
 
 body {
@@ -86,15 +85,12 @@ img, object {
     object-fit: cover;   
 }
 
-
 /* HOME PAGE STYLING */
 
 .banner {
     background-image: url("../images/banner.jpeg");
     background-size: cover;
     height: 480px;
-    width: 100%;
-   
 }
 
 .navbar {
@@ -120,8 +116,7 @@ img, object {
     font-size: 40px;
 }
 
-/* Nav bar animation */
-
+/* nav bar animation */
 .navbar-nav .nav-link {
   position: relative;
 }
@@ -142,13 +137,9 @@ img, object {
 .navbar-nav .nav-link:hover::before {
   visibility: visible;
   transform: scaleX(1);
-}
+}/* end nav bar animation */
 
-/* End nav bar animation */
-
-
-
-  /*banner text*/
+  /*banner text style*/
 .banner-text {
     position: absolute;
     top: 30%;
@@ -159,11 +150,10 @@ img, object {
 }
   
 .banner-text h1 {
-    
     font-family:"Nanum Brush Script", sans-serif;
-}
+} /*end banner text style*/
 
-/* H1 Animation */
+  /* h1 Animation */
 .banner-text h1 {
   animation: fadeIn 2s;
 }
@@ -171,12 +161,10 @@ img, object {
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
-} 
-/* End H1 Animation */ 
+} /* end h1 Animation */
 
 .banner-text p {
     font-size: 20px; 
-    padding-top: -15px;
 }
 
 .banner-text p {
@@ -189,7 +177,6 @@ img, object {
 } 
 
  /*main content style*/
-
 .section {
     border: 2px solid #f2f2f2;
     border-radius: 10px;
@@ -222,15 +209,14 @@ img, object {
     color: #412C27;
     text-decoration: underline;
     text-decoration-color:#412C27;
-}
+}/* end main content style*/
 
 .footer{
     padding: 25px;
     background-color: #412C27;
-}
+}/*END HOME PAGE STYLING */
 
-  /* ABOUT PAGE */
-
+/* ABOUT PAGE STYLING */
 .about-page .navbar{
     background-color:#412C27 ;
 }
@@ -250,10 +236,9 @@ h1.about-page{
 
 .about-me p{
    line-height: 2;
-}
+}/* END ABOUT PAGE STYLING */
 
-  /* CONTACT PAGE */
-
+/* CONTACT PAGE STYLING */
 .contact-page .navbar{
    background-color:#412C27 ;
 }
@@ -304,10 +289,9 @@ h1.contact-page {
 .form button:hover{
     background-color:#412C27;
     color:#f2f2f2
-}
+}/* END CONTACT PAGE STYLING */
 
-/* PHOTOGRAPHY PAGE */
-
+/* PHOTOGRAPHY PAGE STYLING */
 .photography-page .navbar{
     background-color:#412C27 ;
  }
@@ -315,10 +299,9 @@ h1.contact-page {
 .portfolio-title{
     margin-top: 85px;
     font-size: 40px;
-}
+}/*END PHOTOGRAPHY PAGE STYLING */
 
-/* WEB DESIGN PAGE */
-
+/* WEB DESIGN PAGE STYLING */
 .web-page .navbar{
     background-color:#412C27 ;
  }
@@ -374,20 +357,49 @@ h2{
   border: #f2f2f2;
   border-radius: 20px;
   margin-bottom: 40px;
+}/*END WEB DESIGN PAGE STYLING*/
+
+/* skip links */
+.skip-links{
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
+.skip-links a{
+  position: absolute;
+  top: -4em;
+  color:white;
+  padding: .5em 1em;
+  font-weight: bold;
+}
+
+.skip-links a:focus{
+  top: 0;
+}
+
+/* back to top */
+
+.footer a{
+  position: absolute;
+  top: -3em;
+  color:white;
+  padding: 1em;
+  font-weight: bold;
+} 
+
 @media only screen and (min-width: 768px){
+  /* HOME PAGE STYLING */
   .banner {
       background-repeat: no-repeat;
       background-position: center;
-      height:700px;        
+      height:800px;        
   }
   .banner-text h1{
     font-size: 70px;
-  }
+  } /*END HOME PAGE STYLING */
 
-  /* WEB PAGE ANIMATION  */
-
+  /* WEB PAGE STYLING  */
       /* web page p1 style */
   .webdesign1{
     animation-duration: 1s;
@@ -439,7 +451,7 @@ h2{
     margin-left: 150px;
   } /* end web page p2 style */
 
-  /*web page p3 style */
+   /*web page p3 style */
   .webdesign3{
     animation-duration: 2.5s;
     animation-name: slidein;
@@ -458,27 +470,27 @@ h2{
   }
   .webdesign3 p{
     margin-left: 50px;
-  }
+  }/* end web page p3 style */
+  /*END WEB PAGE STYLING */
 
-
-/* CONTACT PAGE */
+/* CONTACT PAGE STYLING*/
   .form-control {
   transition: all 0.3s ease-in-out; /* Add transition for all properties */
   }
 
   .form-control:hover {
   transform: scale(1.1); /* Increase size of input by 10% on hover */
-  }
+  } /*END CONTACT PAGE STYLING*/
 
 }
 
   @media only screen and (min-width: 992px){
- /* HOME PAGE */
+ /* HOME PAGE STYLING */
   .banner-text h1{
       font-size: 90px;
-  }
-  /* WEB PAGE ANIMATION  */
+  } /*END HOME PAGE STYLING*/
 
+  /* WEB PAGE STYLING */
   .webdesign1{
     animation-duration: 1s;
     animation-name: slidein;
@@ -548,18 +560,17 @@ h2{
   }
   .webdesign3 p{
     margin-left: 150px;
-  }
+  } /*END WEB PAGE STYLING*/
 
- /* CONTACT PAGE  */
+ /* CONTACT PAGE STYLING*/
   .form-control {
   transition: all 0.3s ease-in-out; /* Add transition for all properties */
   }
 
-    .form-control:hover {
+  .form-control:hover {
   transform: scale(1.1); /* Increase size of input by 10% on hover */
-  }
+  } /*END CONTACT PAGE STYLING*/
 
-  /*  */
   }
 
 
